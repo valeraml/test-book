@@ -357,7 +357,6 @@
 
     </exercises>
 
-    <xi:include href="./sage/integers-sage-exercises.xml" />
 
     <references>
         <title>References and Suggested Readings</title>
