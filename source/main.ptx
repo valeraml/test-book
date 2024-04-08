@@ -15,14 +15,14 @@
       <title>Module I, Kinematics</title>
       <xi:include href="./ch1_measurements_coordinates_position.ptx"/>
       <xi:include href="./ch2_displacement_velocity_acceleration.ptx" />
-      <xi:include href="./ch3_one_d_kinematics_equations.ptx" />
-      <xi:include href="./ch4_two_d_kinematics.ptx />"
+      <xi:include href="./ch3_one_d_kinematic_equations.ptx" />
+      <xi:include href="./ch4_two_d_kinematics.ptx" />"
     </part>
 
     <part xml:id="part-newtons-laws">
       <title>Module II, Forces and Newton's Laws</title>
       <xi:include href="./ch5_forces_free_body_diagrams.ptx"/>
-      <xi:include href="./ch6_newtons_laws_application.ptx" />
+      <xi:include href="./ch6_newtons_laws_applications.ptx" />
     </part>
     
 
