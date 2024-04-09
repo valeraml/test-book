@@ -10,4 +10,40 @@
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
 
+  <svg id="matter-SVG" viewBox="0 0 585 150">
+    <rect y="2.5" x="2.5" height="145" width="500" fill="none" stroke="#556" stroke-width="5" rx="5"></rect>
+    <path id="matter-measure" d="M8 40.211564543851615 h401.9704038009239  M409.9704038009239 142 V40.211564543851615" stroke="#f65" fill="none" stroke-dasharray="2 6" stroke-width="1.5" opacity="0.4"></path>
+
+    <circle id="matter-target" cx="550" cy="75" r="7.737252739124634" fill="#f65" stroke="none"></circle>
+    <g id="matter-vector" transform="translate(550 75) rotate(743.6161499319562)">
+      <line x1="0" y1="0" x2="0" y2="24" fill="none" stroke="#445" stroke-width="1.4" stroke-linecap="round"></line>
+      <polygon points="0,0 -3,-6.5 0,-5.5 3,-6.5" transform="translate(0 26)" stroke="none" fill="#556"></polygon>
+    </g>
+    <circle cx="550" cy="75" r="1.7" fill="#445" stroke="none"></circle>
+
+    <g font-size="18" stroke="none" fill="#556">
+      <text id="matter-x" x="513" y="15">x = 20.5</text>
+      <text id="matter-y" x="513" y="45">y = 5.5</text>
+      <text id="matter-Vx" x="513" y="115">Vx = -0.8</text>
+      <text id="matter-Vy" x="513" y="145">Vy = -1.7</text>
+    </g>
+    <!-- <g font-size="13" stroke="none" fill="#f65" opacity="0.4">
+      <text id="matter-x-label" x="-100" y="0" display="inline">Δx</text>
+      <text id="matter-y-label" x="-100" y="0" display="inline">Δy</text>
+    </g> -->
+  <circle id="atom-0" cx="409.9704038009239" cy="40.211564543851615" r="7.737252739124634" fill="#f65" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-1" cx="342.66405262033066" cy="70.95335790687685" r="11.662805690694814" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-2" cx="249.55946154479278" cy="35.31607633970087" r="7.984646310412291" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-3" cx="289.16044765178316" cy="118.55867667221244" r="5.027693857789736" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-4" cx="119.47145406022699" cy="74.35333274142923" r="5.833892145082225" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-5" cx="210.97338038056026" cy="19.14406214749746" r="5.693541226669491" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-6" cx="232.02075417988544" cy="17.39956434126812" r="5.967003828036587" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-7" cx="132.62996873067587" cy="36.225230043600384" r="4.734726448396314" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-8" cx="158.50951325716872" cy="39.97799192491733" r="14.364944345818369" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-9" cx="297.1675651772139" cy="111.99977236512325" r="5.950016032039292" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-10" cx="356.14916821556585" cy="32.88868103288123" r="8.961887934144197" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-11" cx="325.20938991394274" cy="94.7275610568816" r="8.992884717598647" fill="#8ab" stroke="none" stroke-width="2"></circle>
+  <circle id="atom-12" cx="489.59385183775254" cy="29.94508495277909" r="9.441919977837124" fill="#8ab" stroke="none" stroke-width="2"></circle>
+</svg>
+
 </chapter>
