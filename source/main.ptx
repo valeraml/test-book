@@ -13,6 +13,7 @@
 
     <part xml:id="part-kinematics">
       <title>Module I, Kinematics</title>
+      <xi:include href="/ch0.ptx"/>
       <xi:include href="./ch1_measurements_coordinates_position.ptx"/>
       <xi:include href="./ch2_displacement_velocity_acceleration.ptx" />
       <xi:include href="./ch3_one_d_kinematic_equations.ptx" />
