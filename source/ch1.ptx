@@ -23,8 +23,8 @@
                   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
               </svg>
             </figure>
-            
         </subsection>
+
         <subsection xml:id="subsec-2">
             <title>new</title>
             <exercise>
@@ -63,6 +63,34 @@
                   </p>
                 </solution>
               </exercise>
+        </subsection>
+
+        <subsection xml:id="subsec-test">
+          <title>test</title>
+          <figure>
+            <caption>1-Dimensional Kinematics</caption>
+            <interactive xml:id="kinematics" platform="jsxgraph" aspect="6:7" source="kinematics.js">
+              <sidebyside width="70%" margins="15%">
+                <stack>
+                  <slate xml:id="box_t" surface="jsxboard" aspect="6:1" />
+                  <slate xml:id="box_s" surface="jsxboard" aspect="6:3" />
+                  <slate xml:id="box_v" surface="jsxboard" aspect="6:3" />
+                  <slate xml:id="box_a" surface="jsxboard" aspect="6:3" />
+                </stack>
+              </sidebyside>
+              <instructions xml:id="kinematics-instructions">
+                <p>
+                  Use the time slider in the top panel to vary the time from 0 sec to 6 sec.
+                  Observe how the displacement, velocity,
+                  and acceleration vary with time.
+                </p>
+              </instructions>
+              <static>
+                <image source="images/kinematics.png" width="60%" />
+              </static>
+            </interactive>
+          </figure>
+          
         </subsection>
         
     </section>
