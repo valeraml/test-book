@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<chapter xml:id="ch1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title> Chapter 0, Scratch </title>
+    <introduction>
+        <p>
+            This is chapter 0
+        </p>
+    </introduction>
+
+    <section xml:id="sec-1">
+        <title>Section 1</title>
+        
+    </section>
+
+    <section xml:id="sec-2">
+        <title>Section 2</title>
+
+        <subsection xml:id="subsec-1">
+            <title>Subsection 2.1</title>
+            <figure>
+              <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              </svg>
+            </figure>
+            
+        </subsection>
+        <subsection xml:id="subsec-2">
+            <title>new</title>
+            <exercise>
+                <statement>
+                  <p>
+                    <idx><h sortby="statement"><tag>statement</tag></h><h sortby="of an exercise">of an <tag>exercise</tag></h></idx>
+                    <idx><h sortby="exercise"><tag>exercise</tag></h><h sortby="statement"><tag>statement</tag></h></idx>
+                    The <tag>statement</tag> is mandatory when any of
+                    <tag>hint</tag>, <tag>answer</tag>, or <tag>solution</tag>
+                    is included as a child of <tag>exercise</tag>,
+                    otherwise it may be omitted.
+                  </p>
+                </statement>
+                <hint>
+                  <p>
+                    <idx><h sortby="hint"><tag>hint</tag></h><h sortby="of an exercise">of an <tag>exercise</tag></h></idx>
+                    <idx><h sortby="exercise"><tag>exercise</tag></h><h sortby="hint"><tag>hint</tag></h></idx>
+                    Optional.
+                    Just an suggestion of what to try.
+                  </p>
+                </hint>
+                <answer>
+                  <p>
+                    <idx><h sortby="answer"><tag>answer</tag></h><h sortby="of an exercise">of an <tag>exercise</tag></h></idx>
+                    <idx><h sortby="exercise"><tag>exercise</tag></h><h sortby="answer"><tag>answer</tag></h></idx>
+                    Optional.
+                    Just the <q>final answer</q>.
+                  </p>
+                </answer>
+                <solution>
+                  <p>
+                    <idx><h sortby="solution"><tag>solution</tag></h><h sortby="of an exercise">of an <tag>exercise</tag></h></idx>
+                    <idx><h sortby="exercise"><tag>exercise</tag></h><h sortby="solution"><tag>solution</tag></h></idx>
+                    Optional.
+                    All the gory details.
+                  </p>
+                </solution>
+              </exercise>
+        </subsection>
+        
+    </section>
+
+
+
+</chapter>
