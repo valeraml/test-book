@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "1",
   "title": "Chapter 0, Scratch",
-  "body": " Chapter 0, Scratch   This is chapter 0    Section 1    Section 2  this is a paragraph   A pendulum   a third degree polynomial with a local max and a local min; its derivative is plotted on the same axes     A pendulum   a third degree polynomial with a local max and a local min; its derivative is plotted on the same axes     Negative multiple of a curve   Plot of x^4 - 1 and its negative.      test 3   A histogram of Gaussian data.      A simple eigenvector demonstration     Subsection 2.1         "
+  "body": " Chapter 0, Scratch   This is chapter 00    Section 1    Section 2  this is a paragraph   A pendulum   a third degree polynomial with a local max and a local min; its derivative is plotted on the same axes     A pendulum   a third degree polynomial with a local max and a local min; its derivative is plotted on the same axes     Negative multiple of a curve   Plot of x^4 - 1 and its negative.      test 3   A histogram of Gaussian data.      A simple eigenvector demonstration     Subsection 2.1         "
 },
 {
   "id": "figure-function-derivative",
