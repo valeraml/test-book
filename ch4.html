@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>One Dimensitional KinematicsThe Integers</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Phys 201 Practice">
+<meta property="book:author" content="You">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Phys 201 Practice:</span> <span class="subtitle">An demo example to get you started</span></a></h1>
+<p class="byline">You</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="part-kinematics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 parts"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part-kinematics.html" class="internal"><span class="codenumber">I</span> <span class="title">Module I, Kinematics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Chapter 0, Scratch</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1.html#sec-1" class="internal"><span class="codenumber">1.1</span> <span class="title">Section 1</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1.html#sec-2" class="internal"><span class="codenumber">1.2</span> <span class="title">Section 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1.html#subsec-1" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Subsection 2.1</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Measurements, Coordinates, Position</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2.html#sec-" class="internal"><span class="codenumber">2.1</span> <span class="title">Animation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Displacement, Velocity, Acceleration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3.html#section-note-on-proofs" class="internal"><span class="codenumber">3.1</span> <span class="title">A Short Note on Proofs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3.html#section-note-on-proofs-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Some Cautions and Suggestions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3.html#section-sets-and-equivalence-relations" class="internal"><span class="codenumber">3.2</span> <span class="title">Sets and Equivalence Relations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3.html#section-sets-and-equivalence-relations-2" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Set Theory</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3.html#section-sets-and-equivalence-relations-3" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Cartesian Products and Mappings</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3.html#section-sets-and-equivalence-relations-4" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Equivalence Relations and Partitions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="ch3.html#ch3-5" class="internal"><span class="codenumber">3.3</span> <span class="title">References and Suggested Readings</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter active">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">One Dimensitional KinematicsThe Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4.html#section-math-induction" class="internal"><span class="codenumber">4.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch4.html#section-division-algorithm" class="internal"><span class="codenumber">4.2</span> <span class="title">The Division Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch4.html#section-division-algorithm-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">The Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch4.html#section-division-algorithm-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch4.html#section-division-algorithm-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Historical Note</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch4.html#integers-sage-exercises" class="internal"><span class="codenumber">4.3</span> <span class="title">Sage Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch4.html#ch4-7" class="internal"><span class="codenumber">4.4</span> <span class="title">Programming Exercises</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="ch4.html#ch4-8" class="internal"><span class="codenumber">4.5</span> <span class="title">References and Suggested Readings</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">Vectors and 2 dimensional kinematics</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part-newtons-laws.html" class="internal"><span class="codenumber">II</span> <span class="title">Module II, Forces and Newton’s Laws</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">Measurements, Coordinates, Position</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Measurements, Coordinates, Position</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">8</span> <span class="title">Chapter Title</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Section Title</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch4"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">4</span><span class="space"> </span><span class="title">One Dimensitional KinematicsThe Integers</span>
+</h2>
+<section class="introduction" id="ch4-3"><div class="para" id="ch4-3-1">The integers are the building blocks of mathematics. In this chapter we will investigate  the fundamental properties of the integers, including mathematical induction, the division algorithm, and the Fundamental Theorem of Arithmetic.</div></section><section class="section" id="section-math-induction"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span>
+</h3>
+<div class="para logical" id="section-math-induction-2">
+<div class="para">Suppose we wish to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 + 2 + \cdots + n = \frac{n(n + 1)}{2}
+\end{equation*}
+</div>
+<div class="para">for any natural number <span class="process-math">\(n\text{.}\)</span> This formula is easily  verified for small numbers such as <span class="process-math">\(n = 1\text{,}\)</span> 2, 3, or 4, but it is impossible to verify for all natural numbers on a case-by-case basis.  To prove the formula true in general, a more generic method is required.</div>
+</div>
+<div class="para logical" id="section-math-induction-3">
+<div class="para">Suppose we have verified the equation for the first <span class="process-math">\(n\)</span> cases.  We will attempt to show that we can generate the formula for the <span class="process-math">\((n + 1)\)</span>th case from this knowledge.  The formula is true for <span class="process-math">\(n = 1\)</span> since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 = \frac{1(1 + 1)}{2}\text{.}
+\end{equation*}
+</div>
+<div class="para">If we have verified the first <span class="process-math">\(n\)</span> cases, then</div>
+<div class="displaymath process-math" id="section-math-induction-3-6">
+\begin{align*}
+1 + 2 + \cdots + n + (n + 1) &amp; = \frac{n(n + 1)}{2} + n + 1\\
+&amp; = \frac{n^2 + 3n + 2}{2}\\
+&amp; = \frac{(n + 1)[(n + 1) + 1]}{2}\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para" id="section-math-induction-4">This is exactly the formula for the <span class="process-math">\((n + 1)\)</span>th case.</div>
+<div class="para" id="section-math-induction-5">This method of proof is known as <dfn class="terminology">mathematical induction</dfn>.  Instead of attempting to verify a statement about some subset <span class="process-math">\(S\)</span> of the positive integers <span class="process-math">\({\mathbb N}\)</span> on a case-by-case basis, an impossible task if <span class="process-math">\(S\)</span> is an infinite set, we give a specific proof for the smallest integer being considered, followed by a generic argument showing that if the statement holds for a given case, then it must also hold for the next  case in the sequence.  We summarize mathematical induction in the following axiom.</div>
+<article class="principle theorem-like" id="section-math-induction-6"><h4 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">4.1</span><span class="period">.</span><span class="space"> </span><span class="title">First Principle of Mathematical Induction.</span>
+</h4>
+<div class="para" id="section-math-induction-6-3-1">Let <span class="process-math">\(S(n)\)</span> be a statement about integers for  <span class="process-math">\(n \in {\mathbb N}\)</span> and suppose <span class="process-math">\(S(n_0)\)</span> is true for some integer <span class="process-math">\(n_0\text{.}\)</span>  If for all integers <span class="process-math">\(k\)</span> with <span class="process-math">\(k \geq n_0\text{,}\)</span> <span class="process-math">\(S(k)\)</span> implies that <span class="process-math">\(S(k+1)\)</span> is true, then <span class="process-math">\(S(n)\)</span> is true for all integers <span class="process-math">\(n\)</span> greater than or equal to <span class="process-math">\(n_0\text{.}\)</span>
+</div></article><details id="example-integers-induction-greater-than" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2</span><span class="period">.</span><span class="space"> </span><span class="title">An Inequality for Powers of <span class="process-math">\(2\)</span>.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para logical" id="example-integers-induction-greater-than-2">
+<div class="para">For all integers <span class="process-math">\(n \geq 3\text{,}\)</span> <span class="process-math">\(2^n \gt n + 4\text{.}\)</span> Since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+8 = 2^3 \gt 3 + 4 = 7\text{,}
+\end{equation*}
+</div>
+<div class="para">the statement is true for <span class="process-math">\(n_0 = 3\text{.}\)</span>  Assume that <span class="process-math">\(2^k \gt k + 4\)</span> for <span class="process-math">\(k \geq 3\text{.}\)</span>  Then <span class="process-math">\(2^{k + 1} = 2 \cdot 2^{k} \gt 2(k + 4)\text{.}\)</span>  But</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2(k + 4) = 2k + 8 \gt k + 5 = (k + 1) + 4
+\end{equation*}
+</div>
+<div class="para">since <span class="process-math">\(k\)</span> is positive.  Hence, by induction, the statement holds for all integers <span class="process-math">\(n \geq 3\text{.}\)</span>
+</div>
+</div></article></details><details id="example-integers-induction-divisible" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Some Integers Divisible by <span class="process-math">\(9\)</span>.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para logical" id="example-integers-induction-divisible-2">
+<div class="para">Every integer <span class="process-math">\(10^{n + 1} + 3 \cdot 10^n + 5\)</span> is divisible by 9 for <span class="process-math">\(n \in {\mathbb N}\text{.}\)</span>  For <span class="process-math">\(n = 1\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15
+\end{equation*}
+</div>
+<div class="para">is divisible by 9.  Suppose that <span class="process-math">\(10^{k + 1} + 3 \cdot 10^k + 5\)</span> is divisible by 9 for <span class="process-math">\(k \geq 1\text{.}\)</span>  Then</div>
+<div class="displaymath process-math" id="example-integers-induction-divisible-2-7">
+\begin{align*}
+10^{(k + 1) + 1} + 3 \cdot 10^{k + 1} + 5&amp; = 10^{k + 2} + 3 \cdot 10^{k + 1} + 50 - 45\\
+&amp; = 10 (10^{k + 1} + 3 \cdot 10^{k} + 5) - 45
+\end{align*}
+</div>
+<div class="para">is divisible by 9.</div>
+</div></article></details><details id="example-integers-binomial-theorem" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4</span><span class="period">.</span><span class="space"> </span><span class="title">The Binomial Theorem.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para logical" id="example-integers-binomial-theorem-2">
+<div class="para">We will prove the binomial theorem using mathematical induction; that is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are real numbers, <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n}{k} = \frac{n!}{k! (n - k)!}
+\end{equation*}
+</div>
+<div class="para">is the binomial coefficient.  We first show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}\text{.}
+\end{equation*}
+</div>
+<div class="para">This result follows from</div>
+<div class="displaymath process-math" id="example-integers-binomial-theorem-2-7">
+\begin{align*}
+\binom{n}{k} + \binom{n}{k - 1} &amp; = \frac{n!}{k!(n - k)!} +\frac{n!}{(k-1)!(n - k + 1)!}\\
+&amp; = \frac{(n + 1)!}{k!(n + 1 - k)!}\\
+&amp; =\binom{n + 1}{k}\text{.}
+\end{align*}
+</div>
+</div> <div class="para logical" id="example-integers-binomial-theorem-3">
+<div class="para">If <span class="process-math">\(n = 1\text{,}\)</span> the binomial theorem is easy to verify. Now assume that the result is true for <span class="process-math">\(n\)</span> greater than or equal to 1.  Then</div>
+<div class="displaymath process-math" id="example-integers-binomial-theorem-3-3">
+\begin{align*}
+(a + b)^{n + 1} &amp; = (a + b)(a + b)^n\\
+&amp; = (a + b) \left( \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}\right)\\
+&amp; = \sum_{k = 0}^{n} \binom{n}{k} a^{k + 1} b^{n - k} + \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n + 1 - k}\\
+&amp; = a^{n + 1} + \sum_{k = 1}^{n} \binom{n}{k - 1} a^{k} b^{n + 1 - k} + \sum_{k = 1}^{n} \binom{n}{k}  a^k b^{n + 1 - k} + b^{n + 1}\\
+&amp;  = a^{n + 1} + \sum_{k = 1}^{n} \left[ \binom{n}{k - 1} + \binom{n}{k} \right]a^k b^{n + 1 - k} + b^{n + 1}\\
+&amp;  = \sum_{k = 0}^{n + 1}   \binom{n + 1}{k} a^k b^{n + 1- k}\text{.}
+\end{align*}
+</div>
+</div></article></details><div class="para" id="section-math-induction-10">We have an equivalent statement of the Principle of Mathematical Induction that is often very useful.</div>
+<article class="principle theorem-like" id="section-math-induction-11"><h4 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Second Principle of Mathematical Induction.</span>
+</h4>
+<div class="para" id="section-math-induction-11-3-1">Let <span class="process-math">\(S(n)\)</span> be a statement about integers for  <span class="process-math">\(n \in {\mathbb N}\)</span> and suppose <span class="process-math">\(S(n_0)\)</span> is true for some integer <span class="process-math">\(n_0\text{.}\)</span>  If <span class="process-math">\(S(n_0), S(n_0 + 1), \ldots, S(k)\)</span> imply that <span class="process-math">\(S(k + 1)\)</span> for <span class="process-math">\(k \geq n_0\text{,}\)</span> then the statement <span class="process-math">\(S(n)\)</span> is true for all integers <span class="process-math">\(n \geq n_0\text{.}\)</span>
+</div></article><div class="para" id="section-math-induction-12">A  nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\({\mathbb Z}\)</span> is <dfn class="terminology">well-ordered</dfn> if <span class="process-math">\(S\)</span> contains a least element.  Notice that the set <span class="process-math">\({\mathbb Z}\)</span> is not well-ordered since it does not contain a smallest element.  However, the natural numbers are well-ordered.</div>
+<article class="principle theorem-like" id="section-math-induction-13"><h4 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Principle of Well-Ordering.</span>
+</h4>
+<div class="para" id="section-math-induction-13-2-1">Every nonempty subset of the natural numbers is well-ordered.</div></article><div class="para" id="section-math-induction-14">The Principle of Well-Ordering is equivalent to the Principle of Mathematical Induction.</div>
+<article class="lemma theorem-like" id="lemma-integers-smallest-number"><h4 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="lemma-integers-smallest-number-1-1">The Principle of Mathematical Induction implies that <span class="process-math">\(1\)</span> is the least positive natural number.</div></article><details id="lemma-integers-smallest-number-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="lemma-integers-smallest-number-2-1">Let <span class="process-math">\(S = \{ n \in {\mathbb N} : n \geq 1 \}\text{.}\)</span> Then <span class="process-math">\(1 \in S\text{.}\)</span>  Now assume that <span class="process-math">\(n \in S\text{;}\)</span> that is, <span class="process-math">\(n \geq 1\text{.}\)</span>  Since <span class="process-math">\(n+1 \geq 1\text{,}\)</span> <span class="process-math">\(n+ 1 \in S\text{;}\)</span> hence, by induction, every natural number is greater than or equal to 1.</div></article></details><article class="theorem theorem-like" id="theorem-integers-pmi-implies-pwo"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="theorem-integers-pmi-implies-pwo-1-1">The Principle of Mathematical Induction implies the Principle of Well-Ordering.  That is, every nonempty subset of <span class="process-math">\(\mathbb N\)</span> contains a least element.</div></article><details id="theorem-integers-pmi-implies-pwo-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="theorem-integers-pmi-implies-pwo-2-1">We must show that if <span class="process-math">\(S\)</span> is a nonempty subset of the natural numbers, then <span class="process-math">\(S\)</span> contains a least element.  If <span class="process-math">\(S\)</span> contains 1, then the theorem is true by <a href="ch4.html#lemma-integers-smallest-number" class="xref" data-knowl="./knowl/xref/lemma-integers-smallest-number.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.7">Lemma 4.7</a>.  Assume that if <span class="process-math">\(S\)</span> contains an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\(1 \leq k \leq n\text{,}\)</span> then <span class="process-math">\(S\)</span> contains a least element.  We will show that if a set <span class="process-math">\(S\)</span> contains an integer less than or equal to <span class="process-math">\(n + 1\text{,}\)</span> then <span class="process-math">\(S\)</span> has a least element.  If <span class="process-math">\(S\)</span> does not contain an integer less than <span class="process-math">\(n+1\text{,}\)</span> then <span class="process-math">\(n+1\)</span> is the smallest integer in <span class="process-math">\(S\text{.}\)</span>  Otherwise, since <span class="process-math">\(S\)</span> is nonempty, <span class="process-math">\(S\)</span> must contain an integer less than or equal to <span class="process-math">\(n\text{.}\)</span> In this case, by induction, <span class="process-math">\(S\)</span> contains a least element.</div></article></details><div class="para logical" id="section-math-induction-17">
+<div class="para">Induction can also be very useful in formulating definitions. For instance, there are two ways to define <span class="process-math">\(n!\text{,}\)</span> the factorial of a positive integer <span class="process-math">\(n\text{.}\)</span>
+</div>
+<ul class="disc">
+<li id="section-math-induction-17-3-1"><div class="para" id="section-math-induction-17-3-1-1">The <em class="emphasis">explicit</em> definition: <span class="process-math">\(n! = 1 \cdot 2 \cdot 3 \cdots (n - 1) \cdot n\text{.}\)</span>
+</div></li>
+<li id="section-math-induction-17-3-2"><div class="para" id="section-math-induction-17-3-2-1">The <em class="emphasis">inductive</em> or <em class="emphasis">recursive</em> definition: <span class="process-math">\(1! = 1\)</span> and <span class="process-math">\(n! = n(n - 1)!\)</span> for <span class="process-math">\(n \gt 1\text{.}\)</span>
+</div></li>
+</ul>
+</div>
+<div class="para" id="section-math-induction-18">Every good mathematician or computer scientist knows that looking at problems recursively, as opposed to explicitly, often results in better understanding of complex issues.</div></section><section class="section" id="section-division-algorithm"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">The Division Algorithm</span>
+</h3>
+<section class="introduction" id="section-division-algorithm-2"><div class="para" id="section-division-algorithm-2-1">An application of the Principle of Well-Ordering that we will use often is the division algorithm.</div> <article class="theorem theorem-like" id="theorem-integers-division_algorithm"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Division Algorithm.</span>
+</h4>
+<div class="para logical" id="theorem-integers-division_algorithm-3-1">
+<div class="para">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers, with <span class="process-math">\(b \gt 0\text{.}\)</span>  Then there exist unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = bq + r
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(0 \leq r \lt b\text{.}\)</span>
+</div>
+</div></article><details id="theorem-integers-division_algorithm-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="theorem-integers-division_algorithm-4-1">This is a perfect example of the existence-and-uniqueness type of proof.  We must first prove that the numbers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> actually  exist. Then we must show that if  <span class="process-math">\(q'\)</span> and <span class="process-math">\(r'\)</span> are two other such numbers, then <span class="process-math">\(q = q'\)</span> and <span class="process-math">\(r = r'\text{.}\)</span>
+</div> <div class="para logical" id="theorem-integers-division_algorithm-4-2">
+<div class="para">
+<em class="emphasis">Existence of <span class="process-math">\(q\)</span> and <span class="process-math">\(r\text{.}\)</span></em> Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S = \{ a - bk : k \in {\mathbb Z} \text{ and } a - bk \geq 0 \}\text{.}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(0 \in S\text{,}\)</span> then <span class="process-math">\(b\)</span> divides <span class="process-math">\(a\text{,}\)</span> and  we can let <span class="process-math">\(q = a/b\)</span> and <span class="process-math">\(r = 0\text{.}\)</span>  If <span class="process-math">\(0 \notin S\text{,}\)</span> we can use the Well-Ordering Principle.  We must first show that <span class="process-math">\(S\)</span> is nonempty.  If <span class="process-math">\(a \gt 0\text{,}\)</span> then <span class="process-math">\(a - b \cdot 0 \in S\text{.}\)</span> If <span class="process-math">\(a \lt 0\text{,}\)</span> then <span class="process-math">\(a - b(2a) = a(1 - 2b) \in S\text{.}\)</span>  In either case <span class="process-math">\(S \neq \emptyset\text{.}\)</span>  By the Well-Ordering Principle, <span class="process-math">\(S\)</span> must have a smallest member, say <span class="process-math">\(r = a - bq\text{.}\)</span> Therefore, <span class="process-math">\(a = bq + r\text{,}\)</span> <span class="process-math">\(r \geq 0\text{.}\)</span> We now show that <span class="process-math">\(r \lt b\text{.}\)</span> Suppose that <span class="process-math">\(r \gt b\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a - b(q + 1)= a - bq - b = r - b \gt 0\text{.}
+\end{equation*}
+</div>
+<div class="para">In this case we would have <span class="process-math">\(a - b(q + 1)\)</span> in the set <span class="process-math">\(S\text{.}\)</span> But then <span class="process-math">\(a - b(q + 1) \lt a - bq\text{,}\)</span> which would contradict the fact that <span class="process-math">\(r = a - bq\)</span> is the smallest member  of <span class="process-math">\(S\text{.}\)</span> So <span class="process-math">\(r \leq b\text{.}\)</span>  Since <span class="process-math">\(0 \notin S\text{,}\)</span> <span class="process-math">\(r \neq b\)</span> and so <span class="process-math">\(r \lt b\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="theorem-integers-division_algorithm-4-3">
+<div class="para">
+<em class="emphasis">Uniqueness of <span class="process-math">\(q\)</span> and <span class="process-math">\(r\text{.}\)</span></em> Suppose there exist integers <span class="process-math">\(r\text{,}\)</span> <span class="process-math">\(r'\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> and <span class="process-math">\(q'\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = bq + r, 0 \leq r \lt b \quad \text{and}\quad a = bq' + r', 0 \leq r' \lt b\text{.}
+\end{equation*}
+</div>
+<div class="para">Then <span class="process-math">\(bq + r =  bq' + r'\text{.}\)</span>  Assume that <span class="process-math">\(r' \geq r\text{.}\)</span>  From the last equation we have <span class="process-math">\(b(q - q') = r' - r\text{;}\)</span> therefore, <span class="process-math">\(b\)</span> must divide <span class="process-math">\(r' - r\)</span> and <span class="process-math">\(0 \leq r'- r \leq r' \lt b\text{.}\)</span>  This is possible only if <span class="process-math">\(r' - r = 0\text{.}\)</span>  Hence, <span class="process-math">\(r = r'\)</span> and  <span class="process-math">\(q = q'\text{.}\)</span>
+</div>
+</div></article></details> <div class="para" id="section-division-algorithm-2-3">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers.  If <span class="process-math">\(b = ak\)</span> for some integer <span class="process-math">\(k\text{,}\)</span> we write <span class="process-math">\(a \mid b\text{.}\)</span>  An integer <span class="process-math">\(d\)</span> is called a <dfn class="terminology">common divisor</dfn> of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> if <span class="process-math">\(d \mid a\)</span> and <span class="process-math">\(d \mid b\text{.}\)</span>  The <dfn class="terminology">greatest common divisor</dfn> of integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> is a positive integer <span class="process-math">\(d\)</span> such that <span class="process-math">\(d\)</span> is a common divisor  of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and if <span class="process-math">\(d'\)</span> is any other common divisor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> then <span class="process-math">\(d' \mid d\text{.}\)</span>   We write <span class="process-math">\(d = \gcd(a, b)\text{;}\)</span> for example, <span class="process-math">\(\gcd( 24, 36) = 12\)</span> and <span class="process-math">\(\gcd(120, 102) = 6\text{.}\)</span>  We say that two integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are <dfn class="terminology">relatively prime</dfn> if <span class="process-math">\(\gcd( a, b ) = 1\text{.}\)</span>
+</div> <article class="theorem theorem-like" id="theorem-integers-gcd"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.10</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="theorem-integers-gcd-1-1">
+<div class="para">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be nonzero integers. Then there exist integers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\gcd( a, b) = ar + bs\text{.}
+\end{equation*}
+</div>
+<div class="para">Furthermore, the greatest common divisor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> is unique.</div>
+</div></article><details id="theorem-integers-gcd-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-integers-gcd-2-1">
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S = \{ am + bn : m, n \in {\mathbb Z} \text{ and } am + bn \gt 0 \}\text{.}
+\end{equation*}
+</div>
+<div class="para">Clearly, the set <span class="process-math">\(S\)</span> is nonempty; hence, by the Well-Ordering Principle <span class="process-math">\(S\)</span> must have a smallest member, say <span class="process-math">\(d = ar + bs\text{.}\)</span>  We claim that <span class="process-math">\(d = \gcd( a, b)\text{.}\)</span>  Write <span class="process-math">\(a = dq + r'\)</span> where <span class="process-math">\(0 \leq r' \lt d\text{.}\)</span> If <span class="process-math">\(r' \gt 0\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="theorem-integers-gcd-2-1-9">
+\begin{align*}
+r'&amp; = a - dq\\
+&amp; = a - (ar + bs)q\\
+&amp; = a - arq - bsq\\
+&amp; = a( 1 - rq ) + b( -sq )\text{,}
+\end{align*}
+</div>
+<div class="para">which is in <span class="process-math">\(S\text{.}\)</span>  But this would contradict the fact that <span class="process-math">\(d\)</span> is the smallest member of <span class="process-math">\(S\text{.}\)</span>  Hence, <span class="process-math">\(r' = 0\)</span> and <span class="process-math">\(d\)</span> divides <span class="process-math">\(a\text{.}\)</span>  A similar argument shows that <span class="process-math">\(d\)</span> divides <span class="process-math">\(b\text{.}\)</span>  Therefore, <span class="process-math">\(d\)</span> is a common divisor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="theorem-integers-gcd-2-2">
+<div class="para">Suppose that <span class="process-math">\(d'\)</span> is another common divisor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> and we want to show that <span class="process-math">\(d' \mid d\text{.}\)</span> If we let <span class="process-math">\(a = d'h\)</span> and <span class="process-math">\(b = d'k\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = ar + bs = d'hr + d'ks = d'(hr + ks)\text{.}
+\end{equation*}
+</div>
+<div class="para">So <span class="process-math">\(d'\)</span> must divide <span class="process-math">\(d\text{.}\)</span> Hence, <span class="process-math">\(d\)</span> must be the unique greatest common divisor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span>
+</div>
+</div></article></details> <article class="corollary theorem-like" id="corollary-integers-coprime"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="corollary-integers-coprime-1-1">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be two integers that are relatively prime. Then there exist  integers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that <span class="process-math">\(ar + bs = 1\text{.}\)</span>
+</div></article></section><section class="subsection" id="section-division-algorithm-3"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">The Euclidean Algorithm</span>
+</h4>
+<div class="para" id="section-division-algorithm-3-2">Among other things, <a href="ch4.html#theorem-integers-gcd" class="xref" data-knowl="./knowl/xref/theorem-integers-gcd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.10">Theorem 4.10</a> allows us to compute the greatest common divisor of two integers.</div>
+<details id="example-integers-gcd" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.12</span><span class="period">.</span><span class="space"> </span><span class="title">Greatest Common Divisor of Two Integers.</span>
+</h5></summary><article class="example example-like knowl__content"> <div class="para logical" id="example-integers-gcd-2">
+<div class="para">Let us compute the greatest common divisor of <span class="process-math">\(945\)</span> and <span class="process-math">\(2415\text{.}\)</span>  First observe that</div>
+<div class="displaymath process-math" id="example-integers-gcd-2-3">
+\begin{align*}
+2415 &amp; = 945 \cdot 2 + 525\\
+945 &amp; = 525 \cdot 1 + 420\\
+525 &amp; = 420 \cdot 1 + 105\\
+420 &amp; = 105 \cdot 4 + 0\text{.}
+\end{align*}
+</div>
+</div> <div class="para" id="example-integers-gcd-3">Reversing our steps, 105 divides 420, 105 divides 525, 105 divides 945, and 105 divides 2415.  Hence, 105 divides both 945 and 2415.  If <span class="process-math">\(d\)</span> were another common divisor of 945 and 2415, then <span class="process-math">\(d\)</span> would also have to divide 105.  Therefore, <span class="process-math">\(\gcd( 945, 2415 ) = 105\text{.}\)</span>
+</div> <div class="para logical" id="example-integers-gcd-4">
+<div class="para">If we work backward through the above sequence of equations, we can also obtain numbers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that <span class="process-math">\(945 r + 2415 s = 105\text{.}\)</span>  Observe that</div>
+<div class="displaymath process-math" id="example-integers-gcd-4-4">
+\begin{align*}
+105 &amp; = 525 + (-1) \cdot 420\\
+&amp; = 525 + (-1) \cdot [945 + (-1) \cdot 525]\\
+&amp; = 2 \cdot 525 + (-1) \cdot 945\\
+&amp; = 2 \cdot [2415 + (-2) \cdot 945] + (-1) \cdot 945\\
+&amp; = 2 \cdot 2415 + (-5) \cdot 945\text{.}
+\end{align*}
+</div>
+</div> <div class="para" id="example-integers-gcd-5">So <span class="process-math">\(r = -5\)</span> and <span class="process-math">\(s= 2\text{.}\)</span>  Notice that <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> are not unique, since <span class="process-math">\(r = 41\)</span> and <span class="process-math">\(s = -16\)</span> would also work.</div></article></details><div class="para logical" id="section-division-algorithm-3-4">
+<div class="para">To compute <span class="process-math">\(\gcd(a,b) = d\text{,}\)</span> we are using repeated divisions to obtain a decreasing sequence of positive integers <span class="process-math">\(r_1 \gt r_2 \gt \cdots \gt r_n = d\text{;}\)</span> that is,</div>
+<div class="displaymath process-math" id="section-division-algorithm-3-4-3">
+\begin{align*}
+b &amp; = a q_1 + r_1\\
+a &amp; = r_1 q_2 + r_2\\
+r_1 &amp; = r_2 q_3 + r_3\\
+&amp; \vdots \\
+r_{n - 2} &amp; = r_{n - 1} q_{n} + r_{n}\\
+r_{n - 1} &amp; = r_n q_{n + 1}\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="section-division-algorithm-3-5">
+<div class="para">To find <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that <span class="process-math">\(ar + bs = d\text{,}\)</span> we begin with this last equation and substitute results obtained from the previous equations:</div>
+<div class="displaymath process-math" id="section-division-algorithm-3-5-4">
+\begin{align*}
+d &amp; = r_n\\
+&amp; = r_{n - 2} - r_{n - 1} q_n\\
+&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )\\
+&amp; = -q_n r_{n - 3} + ( 1+ q_n q_{n-1} ) r_{n - 2}\\
+&amp; \vdots \\
+&amp; = ra + sb\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para" id="section-division-algorithm-3-6">The algorithm that we have just used to find the greatest common divisor <span class="process-math">\(d\)</span> of two integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and to write <span class="process-math">\(d\)</span> as the linear combination of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> is known as the <dfn class="terminology">Euclidean algorithm</dfn>.</div></section><section class="subsection" id="section-division-algorithm-4"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="space"> </span><span class="title">Prime Numbers</span>
+</h4>
+<div class="para" id="section-division-algorithm-4-2">Let <span class="process-math">\(p\)</span> be an integer such that <span class="process-math">\(p \gt 1\text{.}\)</span>  We say that <span class="process-math">\(p\)</span> is a <dfn class="terminology">prime number</dfn>, or simply <span class="process-math">\(p\)</span> is <dfn class="terminology">prime</dfn>, if the only positive numbers that divide <span class="process-math">\(p\)</span> are 1 and <span class="process-math">\(p\)</span> itself.  An integer <span class="process-math">\(n \gt 1\)</span> that is not prime is said to be <dfn class="terminology">composite</dfn>.</div>
+<article class="lemma theorem-like" id="theorem-integers-prime-divisor"><h5 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.13</span><span class="space"> </span><span class="creator">(Euclid)</span><span class="period">.</span>
+</h5>
+<div class="para" id="theorem-integers-prime-divisor-2-1">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers and <span class="process-math">\(p\)</span> be a prime number.  If <span class="process-math">\(p \mid ab\text{,}\)</span> then either <span class="process-math">\(p \mid a\)</span> or <span class="process-math">\(p \mid b\text{.}\)</span>
+</div></article><details id="theorem-integers-prime-divisor-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-integers-prime-divisor-3-1">
+<div class="para">Suppose that <span class="process-math">\(p\)</span> does not divide <span class="process-math">\(a\text{.}\)</span>  We must show that <span class="process-math">\(p \mid b\text{.}\)</span> Since <span class="process-math">\(\gcd( a, p ) = 1\text{,}\)</span> there exist integers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that <span class="process-math">\(ar + ps = 1\text{.}\)</span>  So</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b = b(ar + ps) = (ab)r + p(bs)\text{.}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(p\)</span> divides both <span class="process-math">\(ab\)</span> and itself, <span class="process-math">\(p\)</span> must divide <span class="process-math">\(b = (ab)r + p(bs)\text{.}\)</span>
+</div>
+</div></article></details><article class="theorem theorem-like" id="theorem-integers-infinite-primes"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.14</span><span class="space"> </span><span class="creator">(Euclid)</span><span class="period">.</span>
+</h5>
+<div class="para" id="theorem-integers-infinite-primes-2-1">There exist an infinite number of primes.</div></article><details id="theorem-integers-infinite-primes-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="theorem-integers-infinite-primes-3-1">We will prove this theorem by contradiction.  Suppose that there are only a finite number of primes, say <span class="process-math">\(p_1, p_2, \ldots, p_n\text{.}\)</span>  Let <span class="process-math">\(P = p_1  p_2  \cdots  p_n + 1\text{.}\)</span>    Then <span class="process-math">\(P\)</span> must be divisible by some <span class="process-math">\(p_i\)</span> for <span class="process-math">\(1 \leq i \leq n\text{.}\)</span> In this  case, <span class="process-math">\(p_i\)</span> must divide <span class="process-math">\(P - p_1 p_2 \cdots p_n = 1\text{,}\)</span> which is a contradiction.  Hence, either <span class="process-math">\(P\)</span> is prime or there exists an additional prime number <span class="process-math">\(p \neq p_i\)</span> that divides <span class="process-math">\(P\text{.}\)</span>
+</div></article></details><article class="theorem theorem-like" id="theorem-fund-theorem-arithmetic"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.15</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Arithmetic.</span>
+</h5>
+<div class="para logical" id="theorem-fund-theorem-arithmetic-3-1">
+<div class="para">Let <span class="process-math">\(n\)</span> be an integer such that <span class="process-math">\(n \gt 1\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = p_1 p_2 \cdots p_k\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(p_1, \ldots, p_k\)</span> are  primes (not necessarily distinct).  Furthermore, this factorization is unique; that is, if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = q_1 q_2 \cdots q_l\text{,}
+\end{equation*}
+</div>
+<div class="para">then <span class="process-math">\(k = l\)</span> and the <span class="process-math">\(q_i\)</span>’s are just the <span class="process-math">\(p_i\)</span>’s rearranged.</div>
+</div></article><details id="theorem-fund-theorem-arithmetic-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-fund-theorem-arithmetic-4-1">
+<div class="para">
+<em class="emphasis">Uniqueness.</em>  To show uniqueness we will use induction on <span class="process-math">\(n\text{.}\)</span> The theorem is certainly true for <span class="process-math">\(n = 2\)</span> since in this case <span class="process-math">\(n\)</span> is prime.  Now assume that the result holds for all integers <span class="process-math">\(m\)</span> such that <span class="process-math">\(1 \leq m \lt n\text{,}\)</span> and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-integers-prime-divisor.html">
+\begin{equation*}
+n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(p_1 \leq p_2 \leq \cdots \leq p_k\)</span> and <span class="process-math">\(q_1 \leq q_2 \leq \cdots \leq q_l\text{.}\)</span> By <a href="ch4.html#theorem-integers-prime-divisor" class="xref" data-knowl="./knowl/xref/theorem-integers-prime-divisor.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.13">Lemma 4.13</a>, <span class="process-math">\(p_1  \mid  q_i\)</span> for some <span class="process-math">\(i = 1, \ldots, l\)</span> and <span class="process-math">\(q_1  \mid  p_j\)</span> for some <span class="process-math">\(j = 1, \ldots, k\text{.}\)</span>  Since all of the <span class="process-math">\(p_i\)</span>’s and <span class="process-math">\(q_i\)</span>’s are prime, <span class="process-math">\(p_1 = q_i\)</span> and  <span class="process-math">\(q_1 = p_j\text{.}\)</span> Hence, <span class="process-math">\(p_1 = q_1\)</span> since <span class="process-math">\(p_1 \leq p_j = q_1 \leq q_i = p_1\text{.}\)</span>  By the induction hypothesis,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-integers-prime-divisor.html">
+\begin{equation*}
+n' = p_2 \cdots p_k = q_2 \cdots q_l
+\end{equation*}
+</div>
+<div class="para">has a unique factorization.  Hence, <span class="process-math">\(k = l\)</span> and <span class="process-math">\(q_i = p_i\)</span> for <span class="process-math">\(i = 1, \ldots, k\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="theorem-fund-theorem-arithmetic-4-2">
+<div class="para">
+<em class="emphasis">Existence.</em> To show existence, suppose that there is some integer that cannot be written as the product of primes.  Let <span class="process-math">\(S\)</span> be the set of all such numbers.  By the Principle of Well-Ordering, <span class="process-math">\(S\)</span> has a smallest number, say <span class="process-math">\(a\text{.}\)</span>  If the only positive factors of <span class="process-math">\(a\)</span> are <span class="process-math">\(a\)</span> and 1, then <span class="process-math">\(a\)</span> is prime, which is a contradiction.  Hence, <span class="process-math">\(a = a_1 a_2\)</span> where <span class="process-math">\(1 \lt a_1 \lt a\)</span> and <span class="process-math">\(1 \lt a_2 \lt a\text{.}\)</span>  Neither <span class="process-math">\(a_1\in S\)</span> nor <span class="process-math">\(a_2 \in S\text{,}\)</span> since <span class="process-math">\(a\)</span> is the smallest element in <span class="process-math">\(S\text{.}\)</span>  So</div>
+<div class="displaymath process-math" id="theorem-fund-theorem-arithmetic-4-2-15">
+\begin{align*}
+a_1 &amp; = p_1 \cdots p_r\\
+a_2 &amp; = q_1 \cdots q_s\text{.}
+\end{align*}
+</div>
+</div> <div class="para logical" id="theorem-fund-theorem-arithmetic-4-3">
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s\text{.}
+\end{equation*}
+</div>
+<div class="para">So <span class="process-math">\(a \notin S\text{,}\)</span> which is a contradiction.</div>
+</div></article></details></section><section class="subsection" id="section-division-algorithm-5"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="space"> </span><span class="title">Historical Note</span>
+</h4>
+<div class="para logical" id="section-division-algorithm-5-2">
+<div class="para">Prime numbers were first studied by the ancient Greeks.  Two important results from antiquity are Euclid’s proof that an infinite number of primes exist and the Sieve of Eratosthenes, a method of computing all of the prime numbers less than a fixed positive integer <span class="process-math">\(n\text{.}\)</span>  One problem in number theory is to find a function <span class="process-math">\(f\)</span> such that <span class="process-math">\(f(n)\)</span> is prime for each integer <span class="process-math">\(n\text{.}\)</span> Pierre Fermat (1601?–1665) conjectured that <span class="process-math">\(2^{2^n} + 1\)</span> was prime for all <span class="process-math">\(n\text{,}\)</span> but later it was shown by Leonhard Euler (1707–1783) that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2^{2^5} + 1 = \text{4,294,967,297}
+\end{equation*}
+</div>
+<div class="para">is a composite number. One of the many unproven conjectures about prime numbers is Goldbach’s Conjecture.  In a letter to Euler in 1742, Christian Goldbach stated the conjecture that every even integer with the exception of 2 seemed to be the sum of two primes:  <span class="process-math">\(4 = 2 + 2\text{,}\)</span> <span class="process-math">\(6 = 3 + 3\text{,}\)</span> <span class="process-math">\(8 =3 + 5\text{,}\)</span> <span class="process-math">\(\ldots\text{.}\)</span>  Although the conjecture has been verified for the numbers up through <span class="process-math">\(4 \times 10^{18}\text{,}\)</span> it has yet to be proven in general.  Since prime numbers play an important role in public key cryptography, there is currently a great deal of interest in determining whether or not a large number is prime.</div>
+</div></section></section><section class="exercises" id="integers-sage-exercises"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Sage Exercises</span>
+</h3>
+<section class="introduction" id="integers-sage-exercises-2"><div class="para" id="integers-sage-exercises-2-1">These exercises are about investigating basic properties of the integers, something we will frequently do when investigating groups.  Use the editing capabilities of a Sage worksheet to annotate and explain your work.</div></section><article class="exercise exercise-like" id="integers-sage-exercises-3"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-3-1-1">Use the <code class="code-inline tex2jax_ignore">next_prime()</code> command to construct two different 8-digit prime numbers and save them in variables named <code class="code-inline tex2jax_ignore">a</code> and <code class="code-inline tex2jax_ignore">b</code>.</div></article><article class="exercise exercise-like" id="integers-sage-exercises-4"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-4-1-1">Use the <code class="code-inline tex2jax_ignore">.is_prime()</code> method to verify that your primes <code class="code-inline tex2jax_ignore">a</code> and <code class="code-inline tex2jax_ignore">b</code> are really prime.</div></article><article class="exercise exercise-like" id="integers-sage-exercises-5"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-5-1-1">Verify that <span class="process-math">\(1\)</span> is the greatest common divisor of your two primes from the previous exercises.</div></article><article class="exercise exercise-like" id="integers-sage-exercises-6"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-6-1-1">Find two integers that make a “linear combination” of your two primes equal to <span class="process-math">\(1\text{.}\)</span>  Include a verification of your result.</div></article><article class="exercise exercise-like" id="integers-sage-exercises-7"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-7-1-1">Determine a factorization into powers of primes for <span class="process-math">\(c=4\,598\,037\,234\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="integers-sage-exercises-8"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="integers-sage-exercises-8-1-1">Write a compute cell that defines the same value of <code class="code-inline tex2jax_ignore">c</code> again, and then defines a candidate divisor of <code class="code-inline tex2jax_ignore">c</code> named <code class="code-inline tex2jax_ignore">d</code>.  The third line of the cell should return <code class="code-inline tex2jax_ignore">True</code> if and only if <code class="code-inline tex2jax_ignore">d</code> is a divisor of <code class="code-inline tex2jax_ignore">c</code>.  Illustrate the use of your cell by testing your code with <span class="process-math">\(d=7\)</span> and in a new copy of the cell, testing your code with <span class="process-math">\(d=11\text{.}\)</span>
+</div></article></section><section class="exercises" id="ch4-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Programming Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="sieve-primes"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">The Sieve of Eratosthenes.</span>
+</h4>
+<div class="para" id="sieve-primes-3-1">One method of computing all of the prime numbers less than a certain fixed positive integer <span class="process-math">\(N\)</span> is to list all of the numbers <span class="process-math">\(n\)</span> such that <span class="process-math">\(1 \lt n \lt N\text{.}\)</span>  Begin by eliminating all of the multiples of 2.  Next eliminate all of the multiples of 3. Now eliminate all of the  multiples of 5.  Notice that 4 has already been crossed out.  Continue in this manner, noticing that we do not have to go all the way to <span class="process-math">\(N\text{;}\)</span> it suffices to stop at <span class="process-math">\(\sqrt{N}\text{.}\)</span> Using this method, compute all of the prime numbers less than <span class="process-math">\(N = 250\text{.}\)</span>  We can also use this method to find all of the integers that are relatively prime to an integer <span class="process-math">\(N\text{.}\)</span>  Simply eliminate the prime factors of <span class="process-math">\(N\)</span> and all of their multiples.  Using this method, find all of the numbers that are relatively prime to <span class="process-math">\(N= 120\text{.}\)</span>  Using the Sieve of Eratosthenes, write a program that will compute all of the primes less than an integer <span class="process-math">\(N\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="ch4-7-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para logical" id="ch4-7-3-2-1">
+<div class="para">Let <span class="process-math">\({\mathbb N}^0 = {\mathbb N} \cup \{ 0 \}\text{.}\)</span> Ackermann’s function is the function <span class="process-math">\(A :{\mathbb N}^0 \times {\mathbb N}^0 \rightarrow {\mathbb N}^0\)</span> defined by the equations</div>
+<div class="displaymath process-math" id="ch4-7-3-2-1-3">
+\begin{align*}
+A(0, y) &amp; = y + 1\\
+A(x + 1, 0) &amp; = A(x, 1)\\
+A(x + 1, y + 1) &amp; = A(x, A(x + 1, y))\text{.}
+\end{align*}
+</div>
+</div> <div class="para" id="ch4-7-3-2-2">Use this definition to compute <span class="process-math">\(A(3, 1)\text{.}\)</span>  Write a program to evaluate Ackermann’s function.  Modify the  program to count the number of statements executed in the program when Ackermann’s function is evaluated.  How many statements are executed in the evaluation of <span class="process-math">\(A(4, 1)\text{?}\)</span>  What about <span class="process-math">\(A(5, 1)\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="ch4-7-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para logical" id="ch4-7-4-1-1">
+<div class="para">Write a computer program that will implement the Euclidean algorithm.  The program should accept two positive integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> as input and should output <span class="process-math">\(\gcd( a,b)\)</span> as well as integers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\gcd( a,b) = ra + sb\text{.}
+\end{equation*}
+</div>
+</div></article></section><section class="references" id="ch4-8"><h3 class="heading hide-type">
+<span class="type">References</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">References and Suggested Readings</span>
+</h3>
+<article class="bib" id="ch4-8-2"><div class="bibitem">[1]</div>
+<div class="bibentry"> Brookshear, J. G. <i>Theory of Computation: Formal Languages, Automata, and Complexity</i>.  Benjamin/Cummings, Redwood City, CA, 1989. Shows the relationships of the theoretical aspects of computer science to set theory and the integers.</div></article><article class="bib" id="ch4-8-3"><div class="bibitem">[2]</div>
+<div class="bibentry">  Hardy, G. H. and Wright, E. M. <i>An Introduction to the Theory of Numbers</i>.  6th ed. Oxford University Press, New York, 2008.</div></article><article class="bib" id="ch4-8-4"><div class="bibitem">[3]</div>
+<div class="bibentry">  Niven, I. and Zuckerman, H. S. <i>An Introduction to the Theory of Numbers</i>.  5th ed. Wiley, New York, 1991.</div></article><article class="bib" id="ch4-8-5"><div class="bibitem">[4]</div>
+<div class="bibentry">  Vanden Eynden, C. <i>Elementary Number Theory</i>. 2nd ed.  Waveland Press, Long Grove IL, 2001.</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
